@@ -24,7 +24,6 @@ inputEl.addEventListener("blur", (event) =>
 );
 
 function changeBorderInputEl(e) {
-  inputEl.classList.remove("invalid");
-  inputEl.classList.remove("valid");
+  inputEl.classList.remove("invalid", "valid");
   return e.target.value.length >= Number(DATA_LENGTH) ? "valid" : "invalid";
 }

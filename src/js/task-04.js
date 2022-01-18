@@ -18,9 +18,3 @@ incrementButtonEl.addEventListener("click", () => {
   counterValue += 1;
   spanValueEl.innerHTML = counterValue;
 });
-
-// const allButton = document.querySelectorAll("#counter button");
-
-// allButton.forEach((el) => {
-//   console.log(el.dataset);
-// });

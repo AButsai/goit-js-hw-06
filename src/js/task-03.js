@@ -29,10 +29,10 @@ galleryUlEl.style.margin = "-10px";
 galleryUlEl.style.alignItems = "center";
 
 function iteratingArray() {
-  return images.reduce((stringЗattern, element) => {
+  return images.reduce((stringЗattern, { url, alt }) => {
     return (
       stringЗattern +
-      `<li class="item"><img class="img" src="${element.url}" alt="${element.alt}"></li>`
+      `<li class="item"><img class="img" src="${url}" alt="${alt}"></li>`
     );
   }, "");
 }
