@@ -11,10 +11,10 @@ let counterValue = 0;
 
 decrementButtonEl.addEventListener("click", () => {
   counterValue -= 1;
-  spanValueEl.innerHTML = counterValue;
+  spanValueEl.textContent = counterValue;
 });
 
 incrementButtonEl.addEventListener("click", () => {
   counterValue += 1;
-  spanValueEl.innerHTML = counterValue;
+  spanValueEl.textContent = counterValue;
 });
