@@ -42,12 +42,11 @@ function handleSubmit(event) {
     alert("Please fill in all the fields!");
   } else {
     const user = {
-      email: email.value,
-      password: password.value,
+      userEmail: email.value,
+      userPassword: password.value,
     };
-
-    const { email, password } = user;
-    console.log(`Email: ${email} \nPassword: ${password}`);
+    const { userEmail, userPassword } = user;
+    console.log(`Email: ${userEmail} \nPassword: ${userPassword}`);
   }
 
   event.currentTarget.reset();
