@@ -13,9 +13,10 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-const arrayChildrenDiv = [];
+let arrayChildrenDiv = [];
 
 function createBoxes(amount) {
+  console.log(amount);
   const stepSize = 10;
   let width = 30;
   let height = 30;
@@ -46,4 +47,6 @@ function createBoxes(amount) {
 function destroyBoxes() {
   const divDestroyEl = document.querySelectorAll(".box");
   divDestroyEl.forEach((el) => el.remove());
+  // parentDivEl.textContent = "";
+  arrayChildrenDiv = [];
 }
